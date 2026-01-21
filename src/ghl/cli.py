@@ -1,5 +1,9 @@
 """Main CLI entry point for GHL CLI."""
 
+# Load .env FIRST before any other imports
+from dotenv import load_dotenv
+load_dotenv()
+
 import click
 
 from . import __version__

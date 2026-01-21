@@ -5,11 +5,7 @@ import os
 from pathlib import Path
 from typing import Optional
 
-from dotenv import load_dotenv
 from pydantic import BaseModel, Field
-
-# Auto-load .env from current directory
-load_dotenv()
 
 
 class GHLConfig(BaseModel):
