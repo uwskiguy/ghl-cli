@@ -1,8 +1,14 @@
 """Main CLI entry point for GHL CLI."""
 
 # Load .env FIRST before any other imports
+import os
+from pathlib import Path
 from dotenv import load_dotenv
-load_dotenv()
+
+# Explicitly load .env from current working directory
+env_path = Path.cwd() / ".env"
+if env_path.exists():
+    load_dotenv(env_path)
 
 import click
 
