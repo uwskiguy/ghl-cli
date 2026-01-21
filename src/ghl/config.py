@@ -5,7 +5,11 @@ import os
 from pathlib import Path
 from typing import Optional
 
+from dotenv import load_dotenv
 from pydantic import BaseModel, Field
+
+# Auto-load .env from current directory
+load_dotenv()
 
 
 class GHLConfig(BaseModel):
@@ -27,7 +31,6 @@ class ConfigManager:
     CREDENTIALS_FILE = CONFIG_DIR / "credentials.json"
 
     def __init__(self):
-        self._ensure_config_dir()
         self._config: Optional[GHLConfig] = None
 
     def _ensure_config_dir(self) -> None:
