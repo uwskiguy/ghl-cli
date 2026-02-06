@@ -9,9 +9,7 @@ description = "Command-line interface for GoHighLevel API v2"
 readme = "README.md"
 requires-python = ">=3.9"
 license = "MIT"
-authors = [
-    { name = "" }
-]
+authors = []
 keywords = ["gohighlevel", "cli", "crm", "api"]
 classifiers = [
     "Development Status :: 4 - Beta",

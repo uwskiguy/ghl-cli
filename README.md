@@ -66,8 +66,7 @@ When creating your Private Integration, select these scopes based on the feature
 ### Configuration
 
 ```bash
-ghl config set-token          # Set API token (interactive)
-ghl config set-token TOKEN    # Set API token directly
+ghl config set-token          # Set API token (interactive, secure)
 ghl config set-location ID    # Set default location
 ghl config set-format FORMAT  # Set output format (table/json/csv)
 ghl config show               # Show current configuration
